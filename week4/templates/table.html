@@ -1,0 +1,29 @@
+{{define "table"}}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <title>Simple table</title>
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+<body>
+	<table class="table">
+		<thead>
+			<tr>
+			  <th>First Name</th>
+			  <th>Email</th>
+			  <th>Username</th>
+			</tr>
+		</thead>
+		<tbody>
+			{{ range $user := . }}
+			<tr>
+			  <td>{{ $user.FirstName }}</td>
+			  <td>{{ $user.Email }}</td>
+			  <td>{{ $user.Username }}</td>
+			</tr>
+			{{ end }}
+		</tbody>
+	</table>
+</body>
+</html>
+{{end}}
