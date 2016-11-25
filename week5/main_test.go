@@ -43,6 +43,7 @@ func BenchmarkConcatBytes(b *testing.B) {
 		buff.WriteString(rec.E)
 		buff.WriteString("_")
 		buff.WriteString(rec.F)
+		buff.String()
 	}
 }
 
