@@ -60,6 +60,6 @@ func BenchmarkConcatStrings(b *testing.B) {
 	}
 }
 
-// BenchmarkConcatFmt-4       	 1000000	      2064 ns/op	     128 B/op	       7 allocs/op
-// BenchmarkConcatBytes-4     	 3000000	       472 ns/op	     112 B/op	       1 allocs/op
-// BenchmarkConcatStrings-4   	 5000000	       336 ns/op	      32 B/op	       2 allocs/op
+// BenchmarkConcatFmt-4       	 1000000	      2026 ns/op	     128 B/op	       7 allocs/op
+// BenchmarkConcatBytes-4     	 3000000	       497 ns/op	     112 B/op	       1 allocs/op
+// BenchmarkConcatStrings-4   	 5000000	       329 ns/op	      32 B/op	       2 allocs/op
